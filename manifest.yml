@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: babychatbot
+  host: babychatbot
+  disk_quota: 1024M
+  services:
+  - Conversation-baby
+  - Text to Speech-9q
+  - Speech to Text-yb
